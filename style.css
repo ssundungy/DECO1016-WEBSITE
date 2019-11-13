@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#eea2a2;
+    font-family: 'Muli',sans-serif;
+}
+
+.content h1{ 
+    font-family: 'Muli',sans-serif;
+    padding-inline-start: 20%;
+}
+
+.panel-body{
+  height:20px;
+  width: 100%;
+  position: relative;
+  padding-inline-start: 20%;
+  font-family: 'Muli',sans-serif;
+  align-items: center;
+  padding-right:20%;
+
+}
+.panel-body input{
+  padding-top:20px;
+  border:none;
+  font-weight:bold;
+      width: 100%;
+    height:auto;
+}
+
+.name-form{
+    height:20px;
+    width: 100%;
+    position: relative;
+    padding-inline-start: 20%;
+    font-family: 'Muli',sans-serif;
+    align-items: center;
+    padding-right:20%;
+}
+
+.form-group{
+    color:lightcyan;
+    display:flex;
+    align-items: center;
+    font-family: 'Muli',sans-serif;
+    justify-content: space-around;
+  }
+
+  .form input{
+      padding-top:20px;
+border:none;
+    width: 100%;
+  height:auto;
+
+  }
+.form label{
+    position:absolute;
+    bottom:0px;
+    left:0%;
+    width:100%;
+    height:100%;
+}
+
+.checkbox {
+  margin-top:300%;
+    padding-inline-start: 20%;
+   
+display:flex;
+justify-content: baseline;
+
+}
+  nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    min-height:8vh;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 35%;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links a{
+    text-decoration:none;
+    color:#E0FFFF;
+    letter-spacing:4px;
+    font-weight:bold;
+    font-size:14px;
+  }
+  
+  
+  .burger{
+    display:none;
+  }
+
+  .burger div{
+    width:25px;
+    height: 3px;
+    background-color:#E0FFFF;
+    margin: 3px;
+  }
+
+  
+
+@media screen and (max-width: 768px){
+    body{
+        overflow: hidden;
+      }
+      .nav-links{
+        position: absolute;
+        right:0px;
+        height:512px;
+        top:108px;
+        background-image: linear-gradient(to bottom left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width:40%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+       
+      }
+      .nav-links li{
+        opacity:100%;
+        
+   }   }
+   .burger{
+    display:block;
+    cursor:pointer;
+  }
+  
+  .footer{
+    color:lightcyan;
+  padding:20px;
+    text-align: center;
+  height:auto;
+   bottom:30px;
+    font-family: 'Muli',sans-serif;
+    background-color:#7ac5d8;
+    width: 100%;
+    position:fixed;
+    bottom:0px;
+  }

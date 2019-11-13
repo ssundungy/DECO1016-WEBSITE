@@ -4,12 +4,21 @@
   box-sizing: border-box;
 }
 
+/*contents
+- nav
+- burger
+- media screen
+- a bit more of nav
+- hero tags
+- sections beneath
+*/
+
 nav{
   display:flex;
   justify-content:space-around;
   align-items:center;
   min-height:8vh;
-  background-image: linear-gradient(to bottom left, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,6 +38,7 @@ nav{
   font-size:14px;
 }
 
+
 .burger{
   display:none;
 }
@@ -45,6 +55,9 @@ nav{
 body{
   display:none;
 }
+.headline{
+position:absolute;
+}
 }
 @media screen and (max-width: 1000px){
   .nav-links{
@@ -53,7 +66,6 @@ body{
     width: 57%;
   }
 }
-
 
 @media screen and (max-width: 768px){
   body{
@@ -64,7 +76,7 @@ body{
     right:0px;
     height:512px;
     top:108px;
-  background-color:#e2c58b;
+    background-image: linear-gradient(to bottom left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -74,7 +86,7 @@ body{
    
   }
   .nav-links li{
-    opacity:0;
+    opacity:100%;
     
   }
   .burger{
@@ -98,3 +110,194 @@ body{
     transform:translateX(0px);
   }
 }
+
+.hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.hero p{
+  
+  font-family: 'Muli',sans-serif;
+  background-color: white;
+  transform: translateX(50px);
+  scroll-margin-block-start: 2000px;
+  justify-content: center;
+  align-items:center;
+  width:100%
+
+}
+
+
+
+section{  
+  height:100vh;
+  justify-content:center;
+  align-items:center;
+  background: #57c6e1;
+}
+
+.headline {
+  position:absolute;
+  top:130%;
+  left:41%;
+  font-size:65px;
+  transform: translate(-50%,-70%);
+  color:#bbc1bf;
+  font-family: 'Muli', sans-serif;
+  scroll-margin-block-start: 2em;
+  padding-bottom:40px;
+}
+
+.headline p{
+  position: absolute;
+  top:95%;
+  left:0%;
+  border:none;
+  border-radius: 30px;
+}
+
+.headline input[type=text] {
+  padding: 0px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left:16px;
+  font-size: 35px;
+
+}
+
+.hero::after{
+  content:"";
+  background:#e2c58b;
+  widows: 100%;
+  height:100%;
+  position :absolute;
+left:0%;
+}
+.headbang{
+  position:absolute;
+  height:auto;
+  top:190%;
+  left:41%;
+  font-size:55px;
+  transform: translate(-50%,-70%);
+  color:#7edbdc;
+  font-family: 'Muli', sans-serif;
+  margin-top:10px;
+}
+
+.headextra{
+  position:absolute;
+  height:auto;
+  top:210%;
+  left:41%;
+  font-size:25px;
+  transform: translate(-50%,-70%);
+  color:#7edbdc;
+  font-family: 'Montserrat', sans-serif;
+  margin-top:10px;
+}
+.content{
+  color:lightcyan;
+  background-image:linear-gradient(to bottom left, #e2c58b 20%,#c2ce9c 64%,#7edbdc 100%);
+  align-items: center;
+  flex-direction: column;
+ justify-content: space-around;
+  font-family: 'Muli',sans-serif;
+}
+
+.flex-column {
+    margin-bottom: 8px;
+    margin-top:90px;
+    left:30%;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    font-family: 'Muli',sans-serif;
+  }
+  .h1-flex{
+    display: flex;
+    height:auto;
+    color:#b49fda;
+    font-size:40px;
+    font-family: 'Montserrat',sans-serif;
+    transform: rotate(-90deg);
+    display: inline-block;
+  }
+
+
+  .flex-container {
+  
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    justify-content: space-around;
+ margin-top:50%;
+    align-items: stretch;
+   color:white;
+   flex-direction: row-reverse;
+   flex-basis:auto;
+   flex-wrap:wrap-reverse;
+   flex-shrink:0;
+padding-bottom: 14%;
+padding-top:7%;
+  }
+
+.flex-column img {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 30%;
+}
+
+.community{
+ 
+margin:0%;
+  margin-left:0%;
+ padding:20px;
+ padding-left:10%;
+ background-image:url("https://www.pngkey.com/png/full/339-3394948_social-media-marketing-for-lawyers-social-media-phone.png");
+ 
+color:#ebedee;
+  
+font-family: 'Muli', sans-serif;
+}
+.community h2{
+  font-family: 'Muli', sans-serif;
+  font-size:45px;
+}
+.community button{
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-family: 'Muli', sans-serif;
+}
+
+.img-cover{
+
+  top:0%;
+  object-fit: fill;
+  
+ width:100% ;
+ height:auto;
+}
+
+.footer{
+  color:lightcyan;
+padding:20px;
+  text-align: center;
+height:auto;
+ bottom:30px;
+  font-family: 'Muli',sans-serif;
+  background-color:#7ac5d8;
+  width: 100%;
+  position:fixed;
+  bottom:0px;
+}
+
+
